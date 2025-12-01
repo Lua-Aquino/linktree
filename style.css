@@ -1,0 +1,137 @@
+/* importando fonte do google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* zerando css (é universal, para todo site)*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* estrutura de tudo que ta no body */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* colocando degrade como cor de fundo , CSS Gradient */
+   background: #C7C7D6;
+background: linear-gradient(0deg, rgba(199, 199, 214, 1) 0%, rgba(123, 130, 186, 1) 78%);
+}
+
+/* estrutura base container */
+
+.container {
+    width: 800px;
+    height: 100%;
+}
+
+/* para definir proporções da imagem */
+
+.container-imagens {
+    /* para movimentar o container */
+    margin-top: 75px;
+    /* cor no container da imagem */
+    display: flex;
+    /* para manter os elemntos centralizados */
+    align-items: center;
+    /* colocar minhas inf em coluna */
+    flex-direction: column;
+}
+
+/* modificações que todo parágrafo que esta dentro desse container, irá receber */
+
+.container-imagens p {
+    font-size: 14px;
+    /* para espaçar parágrafos */
+    margin-top: 3px;
+}
+
+/* adicionar imagem pelo css */
+
+.img{
+    background-image: url('./foto\ perfil.jpg');
+    /* colocar altura e largura */
+    height: 120px;
+    width: 120px ;
+    /* para deixar a imagem inteira no quadrado */
+    background-size: cover; 
+    /* para deixar a imagem redonda */
+    border-radius: 50%; 
+    /* para espaçar imagem dos parágrafos */
+    margin-bottom: 15px;
+    /* colocando borda na imagem */
+    border: 3px solid black;
+}
+
+/* para configurar o container na pagina */
+
+.container-botao{
+    /* usando o container pai de botao para centraliza-lo */
+    display: flex;
+    align-items: center;
+    /* para colocar espaçamento entre p: "Designer Ux ..." e botão "Visite meu portfolio" */
+    margin-top: 20px;
+    /* para deixar os botoes em coluna */
+    flex-direction: column;
+    /* para aplicar espaçamento entre os elementos */
+    gap: 15px;
+}
+
+/* para estilizar a div */
+
+.botao{
+    /* será colocado em porcentagem para haver  */
+width: 90%;
+height: 60px;
+border: 2px solid black ;
+border-radius: 50px;
+/* para centralizar icone, esse é o botão pai dele */
+display: flex;
+align-items: center;
+/* para colocar cor no botão */
+background-color: #999ecf;
+/* para colocar sombra no botao, achado em box shadow generation */
+box-shadow: 2px 4px 0px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 4px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 4px 0px 0px rgba(0,0,0,0.75);
+}
+
+/* para estilizar um botão especifico */
+
+.botao i {
+margin-left: 15px ;
+font-size: 25px;
+}
+
+/* para estilizar "visite meu site" */
+
+.botao p {
+/* para ocupar espaço total desponível  */
+flex: 1;
+/* para centralizar o texto */
+text-align: center;
+/* outra forma de colocar em negrito */
+font-weight: 600;
+}
+
+.botao a {
+/* para ocupar espaço total desponível  */
+flex: 1;
+/* para centralizar o texto */
+text-align: center;
+/* outra forma de colocar em negrito */
+font-weight: 600;
+}
+
+/* para deixar clicavel */ 
+
+.botao:hover{
+    background-color: #7b84d4;
+    cursor: pointer;
+    /* para crescer botao ao passar o mouse em cima */
+    width: 92%;
+}

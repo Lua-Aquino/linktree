@@ -66,9 +66,8 @@ O projeto utiliza `width: 90%` nos botões e `max-width` no container para garan
 
 ## 🛠️ Possíveis Melhorias Futuras
 
-- Adicionar mais redes sociais
-- Implementar modo escuro/claro
-- Adicionar animações mais elaboradas
-- Integrar analytics para rastrear cliques
-- Adicionar formulário de contato
+- [ ] Adicionar mais redes sociais
+- [x] Implementar modo escuro/claro 
+- [x] Adicionar animações mais elaboradas
+- [ ] Adicionar formulário de contato
 

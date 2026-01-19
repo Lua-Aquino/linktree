@@ -27,6 +27,7 @@ O projeto serve para:
 
 - **HTML5**: Estrutura semântica da página
 - **CSS3**: Estilização e efeitos visuais
+- **JS**: Integração entre modo claro e modo escuro
 - **Font Awesome**: Biblioteca de ícones
 - **Google Fonts (Poppins)**: Tipografia moderna
 

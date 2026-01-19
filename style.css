@@ -17,9 +17,59 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: first baseline;
     /* colocando degrade como cor de fundo , CSS Gradient */
    background: #C7C7D6;
 background: linear-gradient(0deg, rgba(199, 199, 214, 1) 0%, rgba(123, 130, 186, 1) 78%);
+     transition: .4s;
+
+}
+
+/* Estilizar o trilho do botao modo escuro */
+
+.trilho{
+    width: 110px;
+    height: 50px;
+    background-color: #555eb3;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* para estilizar o interruptor */
+
+.trilho .interrupitor{
+    width:50px;
+    height: 50px;
+   background-color: #9e9eee;
+   border-radius: 50px;
+   transform: scale(.8);
+   position: absolute;
+   left: 0;
+   transition: .4s;
+}
+/* para mudar a cor do trilho, quando estiver modo escuro */
+.trilho.dark{
+ background-color: #2a3378;
+}
+
+/* para colocar funcionalidade no modo escuro */
+
+.trilho.dark .interrupitor{
+    left: 60px;
+    background-color: #0a0f3c;
+
+}
+
+/* para deixar o body em modo escuro */
+body.dark{
+ background: #505091;
+background: linear-gradient(0deg, rgb(83, 83, 139) 0%, rgb(50, 55, 94) 78%);
+}
+
+/* para mudar a cor do h1 */
+body.dark p{
+    color: white;
 }
 
 /* estrutura base container */
